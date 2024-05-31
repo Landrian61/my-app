@@ -1,113 +1,146 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button"
 
-export default function Home() {
+import React from 'react'
+import Image from 'next/image';
+
+const landingpage = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+    <div className='container  mx-auto'>
+      <header className="flex justify-between items-center py-4 px-6">
+        <div className="text-2xl font-bold">
+          <span  className='text-teal-600'>Nova</span>
+          <span>CRM</span>
+        </div>
+        <nav className="space-x-4">
+          <a href="#features">Features</a>
+          <a href="#faq">FAQ</a>
+          <a href="#pricing">Pricing</a>
+        </nav>
+        <div className="space-x-4">
+          <a href="/login">
+            <Button variant="outline" >Login</Button>
+          </a>
+          <a href="/signup">
+           <Button>SignUp</Button>
           </a>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+      </header>
+      <main className='py-12  px-6'>
+      <section className="text-center">
+          <h1 className="text-4xl font-bold mb-4">
+            Increase your productivity
+            <br />
+            <span className="text-teal-600">Customer relationship simplified</span>
+          </h1>
+          <p className="mb-8">
+            With seamless integrations, power analytics, and advanced marketing tools, you can take your business to the next level and create sustainable growth with NovaCRM
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+          <a href="/signup">
+           <Button>Get Started</Button>
+          </a>
+        </section>
+        <section className='mt-12'>
+        <div className='flex justify-center'>
+              <Image src="/dashboard.png" alt="Dashboard" width={1200} height={800} />
+            </div>
+        </section>
+        <section className="mt-12">
+          <h2 className="text-2xl font-bold text-center mb-4">The struggle of streamlining customer interactions</h2>
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2">
+              <Image src="/sally.png" alt="Customer Interactions" width={400} height={400} />
+            </div>
+            <div className="md:w-1/2 text-center md:text-left p-4">
+              <p>
+                In today’s digital age, customers expect seamless and personalized experiences. However, businesses often struggle to manage customer interactions across multiple channels, resulting in disjointed, inefficient, and frustrating interactions. This can lead to dissatisfied customers and a poor brand reputation.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="mt-12 text-center">
+          <h2 className="text-2xl font-bold mb-4">NovaCRM makes customer interactions easy</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="p-4 bg-white shadow rounded">
+              <h3 className="font-bold mb-2">Contact Management</h3>
+              <p>Store and organize all of your customer and prospect information in one place.</p>
+            </div>
+            <div className="p-4 bg-white shadow rounded">
+              <h3 className="font-bold mb-2">Lead Management</h3>
+              <p>Track and manage leads from initial contact to closing the deal.</p>
+            </div>
+            <div className="p-4 bg-white shadow rounded">
+              <h3 className="font-bold mb-2">Customer Support</h3>
+              <p>Track customer interactions, resolve issues and provide exceptional support.</p>
+            </div>
+            <div className="p-4 bg-white shadow rounded">
+              <h3 className="font-bold mb-2">Reporting</h3>
+              <p>Get valuable insights and performance metrics.</p>
+            </div>
+          </div>
+        </section>
+        <section id="faq" className="mt-12">
+          <h2 className="text-2xl font-bold text-center mb-4">Got questions? Answers.</h2>
+          <div className="space-y-4">
+            <details className="bg-white p-4 shadow rounded">
+              <summary className="font-bold cursor-pointer">How do I import contacts into the CRM system?</summary>
+              <p className="mt-2">You can import contacts using a CSV file or directly from your email account.</p>
+            </details>
+            <details className="bg-white p-4 shadow rounded">
+              <summary className="font-bold cursor-pointer">How can I generate the reports in the CRM tool?</summary>
+              <p className="mt-2">Reports can be generated using the built-in analytics tool available in the dashboard.</p>
+            </details>
+            <details className="bg-white p-4 shadow rounded">
+              <summary className="font-bold cursor-pointer">Can I integrate third-party applications with this CRM tool?</summary>
+              <p className="mt-2">Yes, our CRM tool supports integration with various third-party applications through APIs.</p>
+            </details>
+            <details className="bg-white p-4 shadow rounded">
+              <summary className="font-bold cursor-pointer">What security measures are in place to protect customer data in the tool?</summary>
+              <p className="mt-2">We use industry-standard encryption and security protocols to ensure your data is protected.</p>
+            </details>
+            <details className="bg-white p-4 shadow rounded">
+              <summary className="font-bold cursor-pointer">How do I track customer interactions and communications within the CRM?</summary>
+              <p className="mt-2">Ensure that all communication channels like emails are logged in the system. Categorize different types of interactions for easy tracking.</p>
+            </details>
+          </div>
+        </section>
+      </main>
+      <footer className="bg-white-100 text-gray-400 py-4">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <div className="text-center md:text-left mb-4 md:mb-0">
+            <p>&copy; 2024 NovaCRM. All rights reserved.</p>
+          </div>
+          <div className="flex space-x-4">
+            <a href="/about">
+              <a>About</a>
+            </a>
+            <a href="/features">
+              <a>Features</a>
+            </a>
+            <a href="/faq">
+              <a>FAQ</a>
+            </a>
+          </div>
+          <div className="flex space-x-4">
+            <a href="https://facebook.com">
+              <a target="_blank">
+                <Image src="/facebook.svg" alt="Facebook" width={24} height={24} />
+              </a>
+            </a>
+            <a href="https://twitter.com">
+              <a target="_blank">
+                <Image src="/twitter.svg" alt="Twitter" width={24} height={24} />
+              </a>
+            </a>
+            <a href="https://instagram.com">
+              <a target="_blank">
+                <Image src="/instagram.svg" alt="Instagram" width={24} height={24} />
+              </a>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
 }
+
+export default landingpage
