@@ -1,22 +1,22 @@
-
 import React from 'react';
+import dynamic from 'next/dynamic';
 import Flow from '../../../components/form/Flow';
-import SignUp from '../../../components/form/SignUp';
-import SecondaryLayout from '../secondary-layout';
+import AuthLayout from '../layout';
+
+const SignUp = dynamic(() => import('../../../components/form/SignUp'), { ssr: false });
 
 const Page: React.FC = () => {
-    return (
-        <SecondaryLayout>
-            <div className='grid grid-cols-2 p-20 bg-white divide-x-2 divide-dashed rounded-md shadow-xl border-gray-500'>
-                <div className='col-span-1 flex justify-center items-center'>
-                    <Flow />
-                </div>
-                <div className='col-span-1 flex justify-center items-center'>
-                    <SignUp />
-                </div>
-            </div>
-        </SecondaryLayout>
-    )
-}
+  console.log('Page component is rendering');
+
+  return (
+    <AuthLayout>
+    <>
+    <Flow />
+      <SignUp />
+      </>
+      
+    </AuthLayout>
+  );
+};
 
 export default Page;

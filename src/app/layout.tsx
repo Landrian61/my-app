@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { REM} from "next/font/google";
+import { Toaster } from "@/components/ui/sonner"
 import "./globals.css";
 
 const rem = REM({ 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={rem.className}>{children}</body>
+      {/* <Toaster /> */}
     </html>
   );
 }

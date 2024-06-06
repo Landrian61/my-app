@@ -11,7 +11,7 @@ const landingpage = () => {
           <span  className='text-teal-600'>Nova</span>
           <span>CRM</span>
         </div>
-        <nav className="space-x-4">
+        <nav className="space-x-4 font-semibold">
           <a href="#features">Features</a>
           <a href="#faq">FAQ</a>
           <a href="#pricing">Pricing</a>
@@ -111,30 +111,30 @@ const landingpage = () => {
           </div>
           <div className="flex space-x-4">
             <a href="/about">
-              <a>About</a>
+              About
             </a>
             <a href="/features">
-              <a>Features</a>
+              Features
             </a>
             <a href="/faq">
-              <a>FAQ</a>
+              FAQ
             </a>
           </div>
           <div className="flex space-x-4">
             <a href="https://facebook.com">
-              <a target="_blank">
+              
                 <Image src="/facebook.svg" alt="Facebook" width={24} height={24} />
-              </a>
+              
             </a>
             <a href="https://twitter.com">
-              <a target="_blank">
+              
                 <Image src="/twitter.svg" alt="Twitter" width={24} height={24} />
-              </a>
+              
             </a>
             <a href="https://instagram.com">
-              <a target="_blank">
+            
                 <Image src="/instagram.svg" alt="Instagram" width={24} height={24} />
-              </a>
+              
             </a>
           </div>
         </div>

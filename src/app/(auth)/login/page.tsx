@@ -1,11 +1,15 @@
-import React from 'react'
-
-const page = () => {
+"use client";
+import React from "react";
+import LoginForm from "@/components/form/Login";
+import AuthLayout from "../layout";
+export default function LoginPage() {
   return (
-    <div>
-      <h1>  Login </h1>
-    </div>
-  )
+    <>
+    <AuthLayout>
+    <LoginForm/>
+    <div className="bg-login-form bg-cover bg-center w-full rounded-r-xl block" ></div>
+    </AuthLayout>
+  
+        </> 
+  );
 }
-
-export default page

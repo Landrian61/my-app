@@ -55,19 +55,9 @@
   * {
     @apply border-border;
   }
+  
 
   body {
     background-color: var(--background);
-  }
-
-  body.secondary-layout {
-    background-color: #f0f0f0; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px; /* Adjust padding as needed */
-    height: 100vh; /* Ensure the body takes the full height of the viewport */
-    box-sizing: border-box; /* Include padding in element's total width and height */
-    margin: 0; /* Remove default body margin */
   }
 }

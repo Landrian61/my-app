@@ -3,12 +3,12 @@ import Image from 'next/image';
 
 function FlowVerifyEmail() {
     return (
-        <div className="relative">
+        <div className="relative  py-5 px-10 rounded-l-xl">
             <div className="text-2xl font-bold ">
                 <span className="text-teal-600 text-md">Nova</span>
                 <span className='text-md'>CRM</span>
             </div>
-            <ul className="space-y-10 relative my-20">
+            <ul className="space-y-10 relative pb-40 pt-20">
                 <li className="flex items-center relative">
                     <div className="rounded-md border-2 border-gray-400 p-2">
                         <Image src="/person.svg" alt="person" width={24} height={24} />
@@ -49,9 +49,9 @@ function FlowVerifyEmail() {
                     </span>
                 </li>
             </ul>
-            <div className="flex flex-col md:flex-row mt-8 space-y-10 md:space-y-0  md:space-x-80">
-                <a href="/" className="underline pr-10 ">Back to Home</a>
-                <a href="/signin" className="underline ">Signin</a>
+            <div className="flex flex-col md:flex-row mt-10 space-y-4 md:space-y-0 md:space-x-80 ">
+                <a href="/" className="text-md">Back to Home</a>
+                <a href="/login" className="text-md">Signin</a>
             </div>
         </div>
     );
